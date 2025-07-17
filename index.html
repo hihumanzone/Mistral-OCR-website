@@ -337,7 +337,6 @@
             apiKeyModal.classList.remove('visible');
         });
 
-        fileDropZone.addEventListener('click', () => imageInput.click());
         imageInput.addEventListener('change', (e) => handleFile(e.target.files[0]));
 
         ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eName => fileDropZone.addEventListener(eName, e => {e.preventDefault(); e.stopPropagation();}));
